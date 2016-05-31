@@ -1,0 +1,1 @@
+shell.run("/usr/bin/shutdown")
