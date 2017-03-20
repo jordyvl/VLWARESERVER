@@ -1,6 +1,6 @@
 # UI API
 [-> Watch](https://github.com/MultHub/LMNet-OS/blob/master/src/apis/ui.lua)
-### Autoloaded with LMNet-OS and VLWARE-OS
+### Autoloaded with LMNet-OS and VLWARE-OS (Server Edition)
 
 | Function | return | Description |
 |:-----------------------------------------------------------------------------------------------:|-----------------|---------------------------------------------|
