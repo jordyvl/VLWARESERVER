@@ -4,7 +4,7 @@ if not git then
 end
 
 if not git.get then
-	printError("Git get function not found")
+	printError("Git get function not found, please check if the api is correctly installed")
 	return
 end
 
