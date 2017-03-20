@@ -17,7 +17,7 @@ if not fs.exists("/disk/.vlware/users.db") then
 	clear()
 	print("Welcome to VLWARE OS Server Edition!")
 	print("This program will help you to set up the users.")
-	print("If you already did this you are not connected to your network!")
+	print("If you already did this you should check you network cable and reboot!")
 	write("Do you want to create user accounts? [Yn] ")
 	local input = string.lower(read())
 	local users = {}
@@ -220,7 +220,7 @@ else
 		local eventData = {os.pullEventRaw()}
 		if eventData[1] == "terminate" then
 			clear()
-			print("Termination is not allowed.")
+			print("Termination is not allowed. Please login first!")
 			sleep(2)
 		elseif eventData[1] == "key" then
 			if eventData[2] == keys.up and selected > 1 then
