@@ -27,14 +27,14 @@ if not ui then
 			shell.run(shell.getRunningProgram())
 			error(nil,0)
 		else
-			error("Can't get UI API! Is github on http whitelist?",0)
+			error("Can't get UI API! Is github on http whitelist? if it is please contact the developer via github!",0)
 		end
 	end
 end
 
 local function getFileMenu(isDir)
 	local waysActs = {
-		['Delete'] = function(pFile) if ui.yesno('Are you shure?','Delete '..pFile) then fs.delete(fs.combine(shell.dir(),pFile)) end end,
+		['Delete'] = function(pFile) if ui.yesno('Are you sure?','Delete '..pFile) then fs.delete(fs.combine(shell.dir(),pFile)) end end,
 		['Rename'] = function(pFile) fs.move(pFile,popup("New File Name: ",'input')) end,
 		['Copy'] = function(pFile) saveFile = '0'..fs.combine(shell.dir(),pFile) end,
 		['Cut'] = function(pFile) saveFile = '1'..fs.combine(shell.dir(),pFile) end,
