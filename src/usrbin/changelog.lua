@@ -6,7 +6,7 @@ if #tArgs == 2 then
 	repo = tArgs[2]
 else
 	user = 'jordyvl'
-	repo = 'VLWARE-OS'
+	repo = 'VLWARESERVER'
 end
 
 local input = git.getCommits(user,repo)
